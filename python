@@ -1,0 +1,42 @@
+total = 550000
+binancep2p = " 1200 USDT"
+USDT= 1200 *(7230) 
+valor= 4500000
+ganancia_total = "Este es el total! " + str(USDT - (valor))
+total = "La cantidad neta en USDT son:" + str(binancep2p)
+total2 = "La cantidad de USDT :" + str(USDT)
+
+print(total  + "\n" + total2 + "\n"  + ganancia_total)
+
+# Lista de tareas pendientes
+tareas_pendientes = []
+
+# Función para mostrar las tareas
+def mostrar_tareas():
+    print("Tareas pendientes:")
+    for tarea in tareas_pendientes:
+        print("- " + tarea)
+
+# Función para añadir una tarea
+def añadir_tarea(tarea):
+    tareas_pendientes.append(tarea)
+    print("Tarea añadida: " + tarea)
+
+# Programa principal
+while True:
+    print("\nMenu:")
+    print("1. Mostrar tareas")
+    print("2. Añadir tarea")
+    print("3. Salir")
+    opcion = input("Elige una opción: ")
+
+    if opcion == '1':
+        mostrar_tareas()
+    elif opcion == '2':
+        nueva_tarea = input("Escribe la nueva tarea: ")
+        añadir_tarea(nueva_tarea)
+    elif opcion == '3':
+        print("¡Hasta luego!")
+        break
+    else:
+        print("Opción no válida. Inténtalo de nuevo.")
